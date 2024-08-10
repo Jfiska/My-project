@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ObjectMoveAlongX : MonoBehaviour
 {
-    void Update()
+    private void Update()
     {
+        float speed = 0.05f;
+
         var nextPosithion = transform.position;
-        nextPosithion.x += 0.05f;
+        nextPosithion.x += speed;
         transform.position = nextPosithion;
     }
 }
