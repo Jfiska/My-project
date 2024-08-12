@@ -6,6 +6,6 @@ public class ObjectMoveToForward : MonoBehaviour
     {
         float speed = 0.05f;
 
-        transform.position += transform.forward * speed;
+        transform.position += transform.forward * speed *Time.deltaTime;
     }
 }
